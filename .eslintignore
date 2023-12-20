@@ -1,9 +1,10 @@
 node_modules
+config
 dist
 temp
+
 LICENSE.md
 pnpm-lock.yaml
 pnpm-workspace.yaml
-
 .eslintrc.*
 vite.config.*
