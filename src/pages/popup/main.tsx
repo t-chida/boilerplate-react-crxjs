@@ -1,6 +1,10 @@
-import App from '@src/App';
+import 'react-devtools';
+
+// eslint-disable-next-line perfectionist/sort-imports
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+import App from './App';
 
 import './index.css';
 

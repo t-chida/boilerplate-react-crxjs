@@ -5,8 +5,6 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['perfectionist'],
-  // ignorePatterns: ['tsconfig.json', 'vite.config.ts'],
-
   rules: {
     'perfectionist/sort-array-includes': 'error',
     'perfectionist/sort-enums': 'error',
@@ -14,16 +12,27 @@ module.exports = {
     'perfectionist/sort-imports': [
       'error',
       {
+        'custom-groups': {
+          type: {
+            react: 'react',
+          },
+          value: {
+            react: ['react', 'react-*'],
+          },
+        },
         groups: [
           'type',
-          ['builtin', 'external'],
+          ['builtin', 'react', 'external'],
           'internal-type',
           'internal',
           ['parent-type', 'sibling-type', 'index-type'],
           ['parent', 'sibling', 'index'],
-          'object',
-          'unknown',
+          ['side-effect', 'style', 'object', 'unknown'],
         ],
+        'internal-pattern': ['@src/**', '@assets/**', '@pages/**'],
+        'newlines-between': 'always',
+        order: 'asc',
+        type: 'natural',
       },
     ],
     'perfectionist/sort-jsx-props': [
@@ -39,6 +48,7 @@ module.exports = {
     'perfectionist/sort-maps': 'error',
     'perfectionist/sort-named-exports': 'error',
     'perfectionist/sort-named-imports': 'error',
+    'perfectionist/sort-objects': 'off',
     'perfectionist/sort-union-types': 'error',
   },
 };

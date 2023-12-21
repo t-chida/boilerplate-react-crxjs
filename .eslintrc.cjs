@@ -12,6 +12,9 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: './tsconfig.eslint.json',
+  },
   plugins: ['react-refresh', 'mui-unused-classes'],
   rules: {
     '@typescript-eslint/no-unused-vars': [
