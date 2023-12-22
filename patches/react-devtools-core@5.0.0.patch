@@ -1,0 +1,14 @@
+diff --git a/dist/backend.js b/dist/backend.js
+index 05aa47fc343d29f8e4a682c6f906a1ab0f79b41e..f2d218f72682c1647c938e6fe4456d003b849ee5 100644
+--- a/dist/backend.js
++++ b/dist/backend.js
+@@ -14525,9 +14525,6 @@ function hook_arrayLikeToArray(arr, len) { if (len == null || len > arr.length)
+  * 
+  */
+ function installHook(target) {
+-  if (target.hasOwnProperty('__REACT_DEVTOOLS_GLOBAL_HOOK__')) {
+-    return null;
+-  }
+ 
+   var targetConsole = console;
+   var targetConsoleMethods = {};
