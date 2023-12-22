@@ -5,7 +5,7 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "types": ["@testing-library/jest-dom/vitest"],
+    "types": ["chrome"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -30,5 +30,6 @@
     }
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "files": ["configs/vitest-setup.ts"],
+  "references": [{ "path": "tsconfig.node.json" }]
 }

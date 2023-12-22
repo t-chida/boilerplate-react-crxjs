@@ -16,7 +16,7 @@ export default defineConfig({
   ],
   test: {
     environment: 'jsdom',
-    setupFiles: ['./config/vitest-setup.ts'],
+    setupFiles: ['configs/vitest-setup.ts'],
   },
   server: {
     hmr: {

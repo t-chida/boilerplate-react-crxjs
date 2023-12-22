@@ -24,4 +24,11 @@ export default defineManifest(async (env) => ({
   action: {
     default_popup: 'src/pages/popup/index.html',
   },
+  background: {
+    service_worker: 'src/pages/background/index.ts',
+    type: 'module',
+  },
+  chrome_url_overrides: {
+    newtab: 'src/pages/newtab/index.html',
+  },
 }));

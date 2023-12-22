@@ -7,7 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
-    './config/.eslintrc.sort-imports.cjs',
+    './configs/.eslintrc.sort-imports.cjs',
     'prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
